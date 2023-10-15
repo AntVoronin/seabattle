@@ -1,0 +1,43 @@
+.wrapper {width: 850px; height: 500px; position: relative; margin: 0 auto; }
+.flex {display: flex;} 
+.top {height: 66px; align-items: center; justify-content: center; font-size: 46px; margin-bottom: 7px;}
+.outer {margin-bottom: 21px; padding-left: 38px;}
+.field {width: 400px; height: 363px; flex-shrink: 0; position: relative; }
+
+.wrap_rul { width: 850px; height: 200px; float: left; position: relative; }
+.rules { width: 300px; margin: 10px auto; padding-left: 30px; font-size: 26px; border: 0px solid #222;
+           
+}
+.rules input { width: 20px; height: 20px; }
+.btn-play {width: 150px; height: 50px; font-family: SegoePrint; font-size: 24px; 
+           color: #4530af; text-align: center; cursor: pointer;
+           margin-left: 50px; margin-top: 10px; padding-left: 0px ;
+           border: 2px solid #777; border-radius: 10px; 
+           /* background-color: rgba(50,50,50, 50) ; */
+        } ;
+
+#opponent .s, .w { background: rgb(240, 240, 240); }
+.h { background: red;}
+.m { background: rgb(128, 128, 128); }
+#opponent div { width: 38px; height: 38px; float: left; border: 1px solid #222; }
+#opponent { width: 400px; height: 400px; float: left; margin: 10px; 
+    /* background: url('../img/backgrField.jpg') no-repeat;  */
+}
+
+#player div { width: 38px; height: 38px; float: left; border: 1px solid #222;}
+#player { width: 400px; height: 400px; float: left; margin: 10px; }
+#player .s {  border: 4px solid #2f2fc2; }
+
+#opponent .ship_rand { background: #765b21; }
+
+
+html, body, div, span, h1, h2, p, a, img, strong, ul, li, button, footer, header {margin: 0; padding: 0; border: 0; vertical-align: baseline;}
+*, :after, :before {-webkit-box-sizing: border-box; box-sizing: border-box;}
+a, button, div {outline: none;}
+ul {list-style: none;}
+img {border: none;}
+
+html, body, .wrap {height: 100%;}
+
+body {font: normal 18px SegoePrint; line-height: 24px; color: #4530af;}
+p {margin-bottom: 10px;}

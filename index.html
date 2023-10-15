@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Морской бой</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="top" class="flex top">Морской бой</div>
+        <div class="flex outer">
+            <div class="field">
+                <div id="player"></div>
+            </div>
+            <div class="field">
+                <div id="opponent"></div>
+            </div>
+        </div>
+        <div class="wrap_rul">
+            <div class="rules">
+                <span> Стрельба по очереди </span>     <input id="oneShot" type="checkbox" >
+            <br><span> Стрельба до промаха </span> <input id="toMiss"  type="checkbox" >
+            <br><button id="play" type="button" class="btn-play"  >Играть</button></button>
+            </div>
+        </div> 
+    </div>
+
+    <script type="text/javascript" src="CellState.js"></script>
+    <script type="text/javascript" src="Cell.js"></script>
+    <script type="text/javascript" src="Ship.js"></script>
+    <script type="text/javascript" src="FireScript.js"></script>
+    <script type="text/javascript" src="Field.js"></script>
+    <script type="text/javascript" src="ShipDirection.js"></script>
+    <script type="text/javascript" src="PlaceShipsScript.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
