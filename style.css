@@ -5,7 +5,7 @@
 .top {  width: 800px; height: 66px; margin: 30px 10px auto; float: left; 
         text-align: center; font-size: 46px; }
 
-.field {width: 400px; height: 400px; float: left; margin: 0px 10px;}
+.field {width: 400px; height: 400px; float: left; margin: 0px 15px;}
 
 .player_left-line {
     width: 20px; height: 400px; float: left; margin: 5px;
