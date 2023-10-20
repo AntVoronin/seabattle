@@ -9,16 +9,20 @@ function fire(el, field) {
         if (!ship.hitCell(el.id)) {
             markShipKilled(ship, field);
         }
-        if (inputOneShot.checked) {
-            return true;
-        }
-        // return false;
+        // if (inputOneShot.checked) return true;
+        return false;
     } else {
         el.className = CellState.MISS.name;
     }
-
     if (document.querySelectorAll('#opponent .s').length === 0) {
-        alert('You have won!');
+        const timer = setTimeout( ()=> {
+            divMessage.textContent = 'Вы победили!';
+        }  , 500 );
+            playerScore++;
+            divMessage.hidden = false;
+            updateScore();
+            clearField();
+            battle();
         return false;
     }
     if (el.className === CellState.MISS.name) return true; 
@@ -54,7 +58,16 @@ function backfire(field) {
         }
         if (document.querySelectorAll('#player .s, #player .w').length === 0 || isMiss) break;
     }
-    if (document.querySelectorAll('#player .s').length === 0) alert('You have lost!'); //победил ИИ:)
+    if (document.querySelectorAll('#player .s').length === 0) { 
+            const timer = setTimeout( ()=> {
+            divMessage.textContent = 'Вы проиграли! Попробуйте снова';
+            }, 500 );
+            opponentScore++;
+            divMessage.hidden = false;
+            updateScore();
+            clearField();
+            battle();
+        }
 }
 
 function getTargets(field) {

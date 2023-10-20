@@ -7,9 +7,21 @@
 </head>
 <body>
     <div class="wrapper">
-        <div id="top" class="flex top">Морской бой</div>
-        <div class="flex outer">
-            <div class="field">
+        <div id="top" class="top">Морской бой</div>
+        <div class="outer">
+            <div class="field"> 
+                <!-- <ul class="player_left-line">
+                    <li><span>1 </span></li>
+                    <li><span>2 </span></li>
+                    <li><span>3 </span></li>
+                    <li><span>4 </span></li>
+                    <li><span>5 </span></li>
+                    <li><span>6 </span></li>
+                    <li><span>7 </span></li>
+                    <li><span>8 </span></li>
+                    <li><span>9 </span></li>
+                    <li><span>10 </span></li>
+                </ul> -->
                 <div id="player"></div>
             </div>
             <div class="field">
@@ -18,9 +30,25 @@
         </div>
         <div class="wrap_rul">
             <div class="rules">
-                <span> Стрельба по очереди </span>     <input id="oneShot" type="checkbox" >
-            <br><span> Стрельба до промаха </span> <input id="toMiss"  type="checkbox" >
-            <br><button id="play" type="button" class="btn-play"  >Играть</button></button>
+                <span> Ваше имя: </span> <input id="playerName" type="text" onchange="activeBtnPlay()" >
+            <br><span> Стрельба по очереди </span> <input id="oneShot" type="checkbox" onchange="activeBtnPlay()" >
+            <br><span> Стрельба до промаха </span> <input id="toMiss"  type="checkbox" onchange="activeBtnPlay()" >
+            <div>
+            <button id="play" type="button" class="btn-play btn-play_disabled" disabled>Играть</button>
+            </div>
+            </div>
+            <div id="messegeGame" class="messegeGame">
+                <div class="wrap_score" hidden>
+                    <span id="score_player">0</span>
+                    <span id="score_opponent">0</span>
+                </div>
+                <div id="messege" hidden>
+                    <span>
+                        <!-- Вы выиграли! Сыграем ещё? -->
+                    </span>
+                    <!-- <button id="btnPlayAgain" class="btn-play">OK</button> -->
+                </div>
+                
             </div>
         </div> 
     </div>
